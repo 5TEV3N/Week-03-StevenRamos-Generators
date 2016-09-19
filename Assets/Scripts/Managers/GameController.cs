@@ -5,18 +5,12 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     //  This Script takes care of the spawning of objects and camera position
-    public Vector3 fromDirection;
-    public Vector3 toDirection;
 
-    [Header ("Collections")]
-    //  Collection of the objects
     public Transform[] installationObjectsCollections;
-    public Transform[] cameraCollection;
-
-    [Header("Positions in Scene")]
-    //  Where the objects will be placed in the scene
-    public Transform[] camOrientations;
     public Transform[] objSpawnPosition;
+
+    public Transform[] cameraCollection;
+    public Transform cam;
 
     void Start()
     {
@@ -27,7 +21,13 @@ public class GameController : MonoBehaviour
 
         objSpawn.SetParent(objSpawnPositionArray); // sets the objects from objSpawn into the spawn position
         objSpawn.localPosition = Vector3.up; // place them (0,1,0)
-        objSpawn.localRotation = Quaternion.FromToRotation(fromDirection, toDirection); //
+        objSpawn.rotation = Random.rotation; // Random rotation
+
+        //CAMERA SECTION
+        Transform camSpawnArray = cameraCollection[Random.Range(0, cameraCollection.Length)];
+        cam.SetParent(camSpawnArray);
+        cam.localPosition = Vector3.up; // no idea but having the local position to (0,1,0) makes the camera properly face the right direction
+        cam.localRotation = Quaternion.identity; // takes the same rotation as the parent
 
     }
 
