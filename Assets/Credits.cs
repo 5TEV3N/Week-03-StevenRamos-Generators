@@ -17,13 +17,10 @@ public class NewBehaviourScript : MonoBehaviour
       - https://www.freesound.org/people/ShadyDave/sounds/325647/
        
       - Various (Beats):
-      - https://www.freesound.org/people/CommanderRobot/sounds/136985/ ()
-      - https://www.freesound.org/people/KorgMS2000B/sounds/58584/
-      - https://www.freesound.org/people/copyc4t/sounds/248137/
+      - https://www.freesound.org/people/CommanderRobot/sounds/136985/  (CommanderRobot)
+      - https://www.freesound.org/people/KorgMS2000B/sounds/58584/  (KorgMS2000B)
+      - https://www.freesound.org/people/copyc4t/sounds/248137/ (copyc4t)
+      - https://www.freesound.org/people/johnnypanic/sounds/143642/ (johnnypanic)
 
-      - Various (Ambience):
-      - https://www.freesound.org/people/klankbeeld/sounds/182288/
-      - https://www.freesound.org/people/ERH/sounds/36864/
-      - 
     */
 }
