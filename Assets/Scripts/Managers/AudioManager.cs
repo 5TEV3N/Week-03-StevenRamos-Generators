@@ -5,7 +5,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource[] Piano;
     public AudioSource[] Beats;
-    public AudioSource[] Spazaz; //Lack of a better term
+    public AudioSource[] Ambience;
 
     void Awake()
     {
@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
         //BEATS SECTION
 
 
-        //SPAZAZ SECTION
+        //AMBIENCE SECTION
+
     }
 }
